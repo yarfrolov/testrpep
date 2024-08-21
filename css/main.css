@@ -1,0 +1,70 @@
+	/* проверяем максимальную ширину экрана */
+	@media (max-width: 720px) {
+
+        body{
+			margin: 24px;	
+            background-color: black;    
+            color: aliceblue;
+		}
+
+
+		h1, h2 {
+            margin-top: 48px;
+            margin-bottom: 16px;
+        
+        }
+
+        p, tr, caption {
+            font-family: Arial, Helvetica, sans-serif;
+			font-size : 18px;
+			line-height: 24px;
+            
+		}
+		
+        h1 {
+            font-size: 32px !important;
+
+
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+        
+
+        li {
+            font-size: 18px;
+            line-height: 24px;
+            margin-top: 4px;
+	    }
+
+
+    blockquote {
+        font-size: 20px;
+        line-height: 27px;
+        color: rgb(212, 212, 212);
+        margin: 24px 0 ;
+
+        }      
+
+        figure {
+            width: 100%; /* Ширина области */
+       }
+
+        figure, img { 
+            width: 100%; /* Ширина изображений */
+            height: 100%; /* Высота изображении */
+            object-fit: cover;/* Вписываем фотографию в область */
+            border-radius: 4px;
+        }
+
+    }
+
+    p::selection, figcaption::selection, h1::selection, h2::selection, blockquote::selection, span::selection, li::selection, td::selection, th::selection, caption::selection {
+        background-color: #F45928;
+        color: white;
+    }
+
+    img {
+        cursor: url(/img/cursor.svg) 2 2, default;
+    }
